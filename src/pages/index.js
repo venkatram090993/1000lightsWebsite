@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import HeaderBlock from '../components/HeaderBlock'
-import About from '../images/About'
+import About from '../components/About'
 import InstallationSteps from '../components/InstallationSteps'
 import Banner2 from '../components/Banner2'
 

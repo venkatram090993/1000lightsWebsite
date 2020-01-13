@@ -7,7 +7,7 @@ import '../css/about.css'
 
 const About = () => {
   return (
-    <div class="lg:w-5/6 flex flex-col m-auto sm: w-full">
+    <div class="flex flex-col m-auto">
       <div class="lg:w-5/6 m-auto sm: w-5/6">
         <h1 class="text-center lg:text-5xl sm: text-2xl font-bold">What is 1000 lights</h1>
         <p class="text-center lg:text-2xl mt-4 whitespace-pre-wrap sm: text-base" style={{ color: "#7C8088" }}>
@@ -19,9 +19,9 @@ const About = () => {
         </p>
       </div>
 
-      <div class="flex lg:flex-row lg:w-full m-auto my-10 sm: flex-col sm: m-auto">
+      <div class="flex lg:flex-row lg:w-5/6 m-auto my-10 sm: flex-col sm: m-auto">
 
-        <div class="box col-md-4 lg:m-5 lg:w-full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
+        <div class="box col-md-4 lg:m-5 lg:w-full md:w-full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
             <div>
             <img src={componentImg} alt="image" class="h-40 m-auto mt-10 mb-5"  />
             </div>
@@ -32,7 +32,7 @@ const About = () => {
             </div>
         </div>
 
-        <div class="box col-md-4 lg:m-5 lg:w-full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
+        <div class="box col-md-4 lg:m-5 lg:w-full md:full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
             <div>
             <img src={themeImg} alt="image" class="h-40 m-auto pl-10 mt-10 mb-5"  />
             </div>
@@ -43,7 +43,7 @@ const About = () => {
             </div>
         </div>
 
-        <div class="box col-md-4 lg:m-5 lg:w-full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
+        <div class="box col-md-4 lg:m-5 lg:w-full md:full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
             <div>
                 <img src={guildImg} alt="image" class="h-40 m-auto pl-10 mt-10 mb-5"  />
             </div>
