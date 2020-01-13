@@ -1,5 +1,4 @@
 import React from "react"
-// import img from '../images/banner.jpg'
 import guildImg from '../images/guide.svg'
 import componentImg from '../images/browser.svg'
 import themeImg from '../images/theme.svg'

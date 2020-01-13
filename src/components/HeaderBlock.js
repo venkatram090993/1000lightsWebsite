@@ -1,8 +1,5 @@
 import React from "react"
 import bannerImg from '../images/banner.png'
-// import bannerImg from '../images/banner.svg'
-// import bannerImg from '../images/banner-2.svg'
-// import bannerImg from '../images/banner-3.png'
 const HeaderBlock = () => {
   return (
     <div class="flex lg:flex-row  sm: flex-col sm: justify-center sm: flex-col-reverse  sm: py-5" style={{background: "linear-gradient( to right bottom, #022b29, #195d5a)"}}>
