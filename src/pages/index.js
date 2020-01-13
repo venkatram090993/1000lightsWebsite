@@ -8,7 +8,7 @@ import Banner2 from "../components/Banner2"
 
 const IndexPage = () => (
   <Layout>
-    {/* <SEO title="Home" /> */}
+    <SEO title="Home" />
     <div class="pt-16">
       <section class="p-4 justify-center lg:my-10 lg:mb-10 sm: mb-10">
         <HeaderBlock />
