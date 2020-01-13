@@ -7,7 +7,8 @@ import InstallationSteps from "../components/InstallationSteps"
 import Banner2 from "../components/Banner2"
 
 const IndexPage = () => (
-<>    <SEO title="Home" />
+  <Layout>
+    <SEO title="Home" />
     <div class="pt-16">
       <section class="p-4 justify-center lg:my-10 lg:mb-10 sm: mb-10">
         <HeaderBlock />
@@ -22,7 +23,7 @@ const IndexPage = () => (
         <Banner2 />
       </section>
     </div>
-</>
+  </Layout>
 )
 
 export default IndexPage
