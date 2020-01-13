@@ -2,9 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import '../css/tailwind.css'
-import Footer from '../components/Footer'
-
-
+import Footer from './Footer'
 import Header from "./Header"
 
 const Layout = ({ children }) => {
