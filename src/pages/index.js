@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/Layout"
+import Layout from "../css/Layout"
 import SEO from "../components/seo"
 import HeaderBlock from '../components/HeaderBlock'
 import About from '../components/About'
