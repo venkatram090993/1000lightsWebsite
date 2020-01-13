@@ -4,12 +4,11 @@ import logo from "../images/logo.svg"
 import YouTubeIcon from "@material-ui/icons/YouTube"
 import TwitterIcon from "@material-ui/icons/Twitter"
 import { Link } from "gatsby"
-import "../css/footer.css"
 
 function Footer() {
   return (
     <section
-      class="text-white mt-10 footer"
+      class="mt-10"
       style={{ fontFamily: "montserrat", background: "rgb(255, 255, 255)" }}
     >
       <h3 class="text-center p-4">Built by Pipesort Technologies</h3>

@@ -22,7 +22,7 @@ const About = () => {
 
         <div class="box col-md-4 lg:m-5 lg:w-full md:w-full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
             <div>
-            <img src={componentImg} alt="image" class="h-40 m-auto mt-10 mb-5"  />
+            <img src={componentImg} alt="components" class="h-40 m-auto mt-10 mb-5"  />
             </div>
             <div class="flex flex-col justify-center">
                 <h1 class="text-center text-xl sm: font-semibold lg:mt-5">Components</h1>
@@ -33,7 +33,7 @@ const About = () => {
 
         <div class="box col-md-4 lg:m-5 lg:w-full md:full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
             <div>
-            <img src={themeImg} alt="image" class="h-40 m-auto pl-10 mt-10 mb-5"  />
+            <img src={themeImg} alt="theme" class="h-40 m-auto pl-10 mt-10 mb-5"  />
             </div>
             <div class="flex flex-col justify-center ">
             <h1 class="text-center text-xl sm: font-semibold lg:mt-5">Theme</h1>
@@ -44,7 +44,7 @@ const About = () => {
 
         <div class="box col-md-4 lg:m-5 lg:w-full md:full flex flex-col lg:p-2 m-auto sm: my-2 sm: w-5/6">
             <div>
-                <img src={guildImg} alt="image" class="h-40 m-auto pl-10 mt-10 mb-5"  />
+                <img src={guildImg} alt="guide" class="h-40 m-auto pl-10 mt-10 mb-5"  />
             </div>
             <div class="flex flex-col justify-center ">
                   <h1 class="text-center text-xl sm: font-semibold lg:mt-5">Guide</h1>

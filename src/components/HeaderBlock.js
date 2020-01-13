@@ -25,7 +25,7 @@ const HeaderBlock = () => {
 
       <div class="col-md-6 w-full sm: mt-10" >
         <div class="flex flex-col sm: mb-5">
-          <img src={bannerImg} class=" w-8/12 m-auto" />
+          <img src={bannerImg} class=" w-8/12 m-auto" alt="banner img" />
         </div>
       </div>
 

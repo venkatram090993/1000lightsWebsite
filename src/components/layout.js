@@ -1,9 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import '../css/tailwind.css'
 import Footer from '../components/Footer'
 import Header from "../components/Header"
+import '../css/tailwind.css'
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,7 +19,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
