@@ -11,6 +11,11 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
 const useStyles = makeStyles(theme => ({
@@ -61,7 +66,7 @@ const Documentation = () => {
 
     function a11yProps(index) {
         return {
-            id: `subheadings`,
+            id: `innerheadings`,
             'aria-controls': `vertical-tabpanel-${index}`,
         };
     }
@@ -79,39 +84,47 @@ const Documentation = () => {
     return (
         <Layout>
             <SEO title="Home" />
-            <div class=" mt-20 w-full flex flex-row">
-               
-                    <div id='maindiv' class="col-md-4 flex flex-col w-1/6 mt-8 px-12 lg:block md:hidden sm: hidden ">
+            <div class="mt-20 w-full flex flex-row">
+
+                <div id='maindiv' class="col-md-4 flex flex-col w-1/6 mt-8 px-12 lg:block md:hidden sm: hidden ">
                     <Tabs
-                    orientation="vertical"
-                    variant="scrollable"
-                    aria-label="Vertical tabs example"
-                    className={classes.tabs}
-                >
+                        orientation="vertical"
+                        variant="scrollable"
+                        aria-label="Vertical tabs example"
+                        className={classes.tabs}
+                    >
                         <p>Components</p>
 
                         {
                             Data.map(category => {
                                 return (
-                                    <div>
-                                        <p>{category.category}</p>
-                                        <ul>
-                                            {
+                                    <div >
+                                        {/* <ExpansionPanel> */}
+                                            <ExpansionPanelSummary
+                                                aria-controls="panel1a-content"
+                                                id='subheadings'
+                                            >
+                                                {category.category}
+                                            </ExpansionPanelSummary>
+                                            <ul >
+                                                {
 
-                                                category.items.map((subitem, index) => {
-                                                    console.log(index)
-                                                    return (
+                                                    category.items.map((subitem, index) => {
+                                                        console.log(index)
+                                                        return (
 
-                                                        <li class="template__nav-item">
-                                                            <a href={`#${subitem.name}`}>
+                                                            <li class="template__nav-item">
+                                                                <a href={`#${subitem.name}`}>
 
-                                                                <Tab label={subitem.name} {...a11yProps(index)} />
+                                                                    <Tab label={subitem.name} {...a11yProps(index)} />
 
-                                                            </a></li>
-                                                    )
-                                                }
-                                                )}
-                                        </ul>
+                                                                </a></li>
+                                                        )
+                                                    }
+                                                    )}
+                                            </ul>
+
+                                        {/* </ExpansionPanel> */}
                                     </div>
                                 )
                             })
