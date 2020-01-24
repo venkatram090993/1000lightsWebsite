@@ -42,14 +42,14 @@ function Header() {
     >
       <div class="lg:p-8">
         <Link to={"/"}>
-          <img src={logo} className="w-3/6" alt="header logo" />
+          <img src={logo} className="w-2/6 m-auto" alt="header logo" />
         </Link>
       </div>
       <div className="nav-container is-visible@m">
 
         {/* <p href="#" className="nav-menu slide-center-out"><Link to={"/about/"}>About </Link></p> */}
         <p href="#" className="nav-menu slide-center-out">
-          <Link to={"/blog/"}>Documentation </Link>
+          <Link to={"/documentation/"}>Documentation </Link>
         </p>
         
         <p href="#" className="nav-menu slide-center-out">
@@ -91,7 +91,7 @@ function Header() {
             <Link to={"/about/"}>About </Link>
           </p> */}
           <p href="#" className="nav-menu">
-            <Link to={"/blog/"}>Documentation </Link>
+            <Link to={"/documentation/"}>Documentation </Link>
           </p>  
           <p href="#" className="nav-menu">
             <Link to={"/blog/"}>Stars </Link>

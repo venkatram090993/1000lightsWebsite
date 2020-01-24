@@ -2,7 +2,7 @@ import React from "react"
 import bannerImg from '../images/banner.png'
 const HeaderBlock = () => {
   return (
-    <div class="flex lg:flex-row  sm: flex-col sm: justify-center sm: flex-col-reverse  sm: py-5" style={{background: "linear-gradient( to right bottom, #022b29, #195d5a)"}}>
+    <div class="flex lg:flex-row sm: flex-col sm: justify-center sm: flex-col-reverse  sm: py-5" style={{background: "linear-gradient( to right bottom, #022b29, #195d5a)"}}>
 
       <div class="flex flex-col col-md-6 w-full justify-center lg:py-10 ">
           <div class="lg:w-5/6 m-auto">
