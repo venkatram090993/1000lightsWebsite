@@ -52,7 +52,7 @@ const Documentation = () =>{
         <Layout>
         <SEO title="Home" />
         <div class=" mt-20 w-full flex flex-row">
-            <div class="col-md-4 flex flex-col w-1/6 mt-8 px-12 lg:block md:hidden sm: hidden ">
+            <div class="col-md-4 flex flex-col h-screen overflow-scroll lg:2/6 mt-8 px-12 lg:block md:hidden sm: hidden ">
             <p>Components</p>
 
             {
@@ -77,12 +77,12 @@ const Documentation = () =>{
         }
             </div>
 
-            <div id="container" class="col-md-8 flex flex-col lg:w-5/6 sm: w-full" style={{maxHeight:"100vh", overflow:"scroll"}}>
+            <div id="container" class=" bg-gray-200  h-screen overflow-scroll scrolling-touch col-md-8 flex flex-col lg:w-5/6 sm: w-full">
 
             {
             Data.map(category=>{
                 return(
-                    <div class=" w-5/6 m-auto">
+                    <div class=" xl:w-5/6 lg:4/6 m-auto">
                    {
                    
                    category.items.map((subitem) =>{
