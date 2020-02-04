@@ -1,0 +1,106 @@
+---
+title: "Card"
+metaTitle: "Card Component"
+metaDescription: "This is the card component of thousand lights"
+---
+
+import Images from "../../src/components/mdxComponents/image.js";
+import cardImg from "../../src/components/images/card.jpg";
+import coloredCardImg from "../../src/components/images/colored-card.jpg";
+import pinterestCardImg from "../../src/components/images/pinterest-card.jpg";
+
+The Card component serves as a basic container to display information such as text, images etc.
+
+<Images src={cardImg} />
+<Images src={coloredCardImg} />
+<Images src={pinterestCardImg} />
+
+## Usage
+
+```javascript
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardFooter,
+  Button
+} from "thousand-lights";
+
+const CardComponent = () => {
+  return (
+    <Card>
+      <CardHeader
+        title="Simple Card"
+        description="By Thousand Lights"
+        titleStyle={{ color: "red" }}
+        descriptionStyle={{ color: "blue" }}
+        image={{ uri: "https://i.imgur.com/lceHsT6l.jpg" }}
+        rightIcon={
+          <Icon
+            name="dots-vertical"
+            size={25}
+            style={{ marginRight: 15 }}
+            onPress={() => {}}
+          />
+        }
+        leftIcon={
+          <Icon
+            name="face"
+            size={25}
+            style={{ marginRight: 15 }}
+            onPress={() => {}}
+          />
+        }
+      />
+      <CardContent>
+        <Text>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book.
+        </Text>
+      </CardContent>
+      <CardFooter>
+        <Button>Get Started</Button>
+      </CardFooter>
+    </Card>;
+  )
+}
+
+```
+
+## Props
+
+**The card component can include one or all of CardHeader, CardContent, or CardFooter components.**
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th width="50%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>children</td>
+      <td>ReactElement</td>
+      <td> - </td>
+      <td>Content inside the card </td>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>object</td>
+      <td> - </td>
+      <td>Style the card component</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<!-- ## Live Editing example
+
+```javascript react-live=true
+<button className={"btn btn-default"}>Change my text</button>
+``` -->

@@ -1,0 +1,66 @@
+---
+title: "Card Content"
+metaTitle: "Card Content Component"
+metaDescription: "This is the card content component of thousand lights"
+---
+
+Used to show content inside the card
+
+## Usage
+
+```javascript
+import {
+  Card,
+  CardContent,
+} from "thousand-lights";
+
+const CardComponent = () => {
+  return (
+    <Card>
+      <CardContent>
+        <Text>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book.
+        </Text>
+      </CardContent>
+    </Card>;
+  )
+}
+
+```
+
+## Props
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th width="50%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>children</td>
+      <td>ReactElement</td>
+      <td> - </td>
+      <td>Text inside the card </td>
+    </tr>
+    <tr>
+      <td>contentWrapperStyle</td>
+      <td>View Component styles</td>
+      <td> - </td>
+      <td>Style the content wrapper</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<!-- ## Live Editing example
+
+```javascript react-live=true
+<button className={"btn btn-default"}>Change my text</button>
+``` -->

@@ -1,0 +1,62 @@
+---
+title: "Card Footer"
+metaTitle: "Card Footer Component"
+metaDescription: "This is the card footer component of thousand lights"
+---
+
+Serves as the footer for the Card component.
+
+## Usage
+
+```javascript
+import {
+  Card,
+  CardFooter,
+  Button
+} from "thousand-lights";
+
+const CardComponent = () => {
+  return (
+    <Card>
+      <CardFooter>
+        <Button>Get Started</Button>
+      </CardFooter>
+    </Card>;
+  )
+}
+
+```
+
+## Props
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th width="50%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>children</td>
+      <td>ReactElement</td>
+      <td> - </td>
+      <td>Content inside the card </td>
+    </tr>
+    <tr>
+      <td>footerStyle</td>
+      <td>View Component styles</td>
+      <td> - </td>
+      <td>Style the footer component</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+<!-- ## Live Editing example
+
+```javascript react-live=true
+<button className={"btn btn-default"}>Change my text</button>
+``` -->

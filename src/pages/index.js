@@ -1,29 +1,33 @@
 import React from "react"
-import Layout from '../components/layout'
-import SEO from "../components/seo"
-import HeaderBlock from "../components/HeaderBlock"
-import About from "../components/About"
-import InstallationSteps from "../components/InstallationSteps"
-import Banner2 from "../components/Banner2"
+import { useStaticQuery, graphql } from "gatsby"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div class="pt-8">
-      <section class="p-4 justify-center lg:my-10 lg:mb-10 sm: mb-10">
-        <HeaderBlock />
-      </section>
-      <section class="lg:px-20">
-        <About />
-      </section>
-      <section>
-        <InstallationSteps />
-      </section>{" "}
-      <section>
-        <Banner2 />
-      </section>
-    </div>
-  </Layout>
-)
+import Layout from "../components/homePage/homeLayout"
+import SEO from "../components/homePage/seo"
+import About from "../components/homePage/About"
+import HeaderBlock from "../components/homePage/HeaderBlock"
+import InstallationSteps from "../components/homePage/InstallationSteps"
+import Banner2 from "../components/homePage/Banner2"
+
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div class="pt-8">
+        <section class="p-4 justify-center lg:my-10 lg:mb-10 sm: mb-10">
+          <HeaderBlock />
+        </section>
+        <section class="lg:px-20">
+          <About />
+        </section>
+        <section>
+          <InstallationSteps />
+        </section>{" "}
+        <section>
+          <Banner2 />
+        </section>
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage
