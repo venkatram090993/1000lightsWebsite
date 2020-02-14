@@ -1,15 +1,19 @@
 ---
-title: "Button"
-metaTitle: "Button Component"
-metaDescription: "This is the button component of thousand lights"
+title: "Bottom Sheet"
+metaTitle: "Colored Card Component"
+metaDescription: "List of cards that can be configured completely to fit your design"
 ---
 
-import buttonsImg from "../../src/components/images/buttons.jpg";
+
+import ColoredCardsGifImg from "../../src/components/images/ColoredCardsGif.gif";
 import Images from "../../src/components/mdxComponents/image.js";
 
 The Button component can be used to trigger an action.
 
-<Images src={buttonsImg} />
+<Images src={ColoredCardsGifImg} />
+
+
+BottomSheet to show content. \\ Have to incluse code and more data
 
 ## Usage
 
@@ -19,7 +23,7 @@ import ColoredCards from "thousand-lights";
 const ColoredCards = () => {
      const cardItems = [
         {
-          title: 'card1',
+          title: 'Card 1 ',
           description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
           buttonTitle: 'Get Started',
           backgroundColor: 'black',
@@ -28,7 +32,7 @@ const ColoredCards = () => {
           }
         },
         {
-            title: 'card3',
+            title: 'Card 2',
             description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
             buttonTitle: 'Get Started',
             backgroundColor: 'black',
@@ -41,6 +45,7 @@ const ColoredCards = () => {
     </View>
   );
 };
+
 ```
 
 ## Props
@@ -57,33 +62,15 @@ const ColoredCards = () => {
   <tbody>
     <tr>
       <td>children</td>
-      <td>ReactNode</td>
+      <td>ReactElement</td>
       <td> - </td>
-      <td>Text of the button</td>
+      <td>Text inside the card </td>
     </tr>
     <tr>
-      <td>color</td>
-      <td>string</td>
-      <td> primary </td>
-      <td>Can be primary, secondary or danger.</td>
-    </tr>
-    <tr>
-      <td>size</td>
-      <td>string</td>
-      <td> medium </td>
-      <td>Can be small, medium or large.</td>
-    </tr>
-    <tr>
-      <td>appearance</td>
-      <td>string</td>
-      <td> normal </td>
-      <td>Can be normal or bordered.</td>
-    </tr>
-    <tr>
-      <td>style</td>
-      <td>View Component style</td>
+      <td>contentWrapperStyle</td>
+      <td>View Component styles</td>
       <td> - </td>
-      <td>Styles for the Button component.</td>
+      <td>Style the content wrapper</td>
     </tr>
   </tbody>
 </table>

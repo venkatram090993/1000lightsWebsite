@@ -17,25 +17,25 @@ export const AwesomeButton = () => (<Button>BUTTON</Button>);`
           background: "linear-gradient(to right top, #022b29, #195d5a)",
         }}
       >
-        <h1 class="lg:text-5xl text-center text-white font-bold lg:my-10 sm: text-2xl sm: m-5">
+        <h1 class="lg:text-5xl text-center text-white font-bold lg:my-10 sm: text-4xl sm: m-5">
           How to <br /> use 1000 Lights
         </h1>
-        <button class="lg:text-xl w-2/6 p-1 rounded-lg text-white m-auto bg-green-600">
+        <button class="lg:text-xl lg:w-2/6 lg:p-1 rounded-lg text-white m-auto bg-green-600 sm: w-3/6 sm: p-2">
           Get Started
         </button>
       </div>
 
-      <div class="col-md-6 bg-gray-400 lg:py-20 w-full flex flex-col justify-center px-5">
-        <div class="py-2">
-          <p class="text-xl py-2">
-            1. Install the UI Kitten package from the NPM
+      <div class="col-md-6 bg-gray-400 lg:py-10 w-full flex flex-col justify-center px-5 sm: py-10">
+        <div class="lg:py-2">
+          <p class="text-xl lg:py-2 sm: py-5">
+            1. Install the 1000lights package from the NPM or Yarn
           </p>
           <SyntaxHighlighter language="javascript" style={docco}>
             {codeString2}
           </SyntaxHighlighter>
         </div>
-        <div class="py-2">
-          <p class="text-xl py-2">
+        <div class="lg:py-2">
+          <p class="text-xl lg:py-2 sm: py-5">
             2. Import the component and use it in your project
           </p>
           <SyntaxHighlighter language="javascript" style={docco}>

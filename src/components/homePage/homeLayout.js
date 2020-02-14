@@ -13,6 +13,8 @@ const Layout = ({ children }) => {
       <div
         style={{
           paddingTop: 0,
+          position:"relative",
+          zIndex:2,
         }}
       >
         <main>{children}</main>

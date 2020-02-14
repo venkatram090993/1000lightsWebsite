@@ -1,5 +1,5 @@
 ---
-title: "Card Footer"
+title: "Card Slider"
 metaTitle: "Card Footer Component"
 metaDescription: "This is the card footer component of thousand lights"
 ---
@@ -10,18 +10,33 @@ Serves as the footer for the Card component.
 
 ```javascript
 import {
-  Card,
-  CardFooter,
-  Button
+  CardSlider
 } from "thousand-lights";
 
 const CardComponent = () => {
+
+    const cardItems = [
+        {
+          title: 'Card 1 ',
+          description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+          buttonTitle: 'Get Started',
+          backgroundColor: 'black',
+          buttonFunction: function(){
+              console.log("Thousand Lights")
+          }
+        },
+        {
+            title: 'Card 2',
+            description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+            buttonTitle: 'Get Started',
+            backgroundColor: 'black',
+            buttonFunction: ()=>{AlertFunction()}
+          },
+      ];
+
+
   return (
-    <Card>
-      <CardFooter>
-        <Button>Get Started</Button>
-      </CardFooter>
-    </Card>;
+    <CardSlider data={cardItems} />
   )
 }
 

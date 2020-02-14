@@ -1,9 +1,12 @@
 import React from "react"
 import bannerImg from "../images/banner.png"
+import gitHubImg from '../images/github.svg'
+import { navigate} from "gatsby"
+
 const HeaderBlock = () => {
   return (
     <div
-      class="flex lg:flex-row sm: flex-col sm: justify-center sm: flex-col-reverse  sm: py-5"
+      class="flex lg:flex-row sm: flex-col sm: justify-center sm: flex-col-reverse  sm: py-5 sm: mt-5 lg:mt-0"
       style={{
         background: "linear-gradient( to right bottom, #022b29, #195d5a)",
       }}
@@ -18,19 +21,27 @@ const HeaderBlock = () => {
             1000 Lights
           </h1>
           <p
-            class="lg:text-2xl lg:text-left lg:px-10 m-2 sm: text-base sm: text-center sm: mt-5"
-            style={{ color: "gray" }}
+            class="lg:text-2xl lg:text-left lg:px-10 m-2 sm: text-xl sm: px-2 sm: text-center sm: mt-5"
+            style={{ color: "lightgray" }}
           >
             React Native library to build ultra modern mobile applications.
             OpenSource and free for you build awesome looking apps with ease.
           </p>
           <div class="flex lg:flex-row lg:justify-start lg:mt-5 lg:ml-10  sm: flex-col sm: m-auto sm: mt-5">
-            <button class=" text-white bg-green-500 rounded-lg  p-2  lg:m-2 lg:w-2/6 sm: m-auto sm: w-3/6 sm: my-1 ">
-              Get Started
-            </button>
-            <button class=" text-white bg-green-500 rounded-lg  p-2  bg-green-500 lg:m-2 sm: m-auto lg:w-2/6 sm: w-3/6 sm: my-1">
-              Git Hub
-            </button>
+
+
+          <div class=" bg-green-500 text-white rounded-md border-green-500 bg-transparent border-2 p-2 lg:m-2 sm: m-auto lg:w-2/6  sm:w-3/12 xs: w-3/6 sm: my-1 flex flex-row justify-center cursor-pointer align-middle"  onClick={()=>{navigate("/gettingStarted")}}>
+              {/* <img src={gitHubImg} style={{height:"35px", width:40, marginLeft:"-10px"}} /> */}
+              <p class="lg:text-2xl sm:text-md" >Get Started</p>
+            </div> 
+            
+            <a  href="https://github.com/pipesort/native-components" class=" text-white rounded-md border-white bg-transparent border-2 p-2 lg:m-2 sm: m-auto lg:w-2/6  sm:w-3/12 xs: w-3/6 sm: my-1 flex flex-row lg:justify-center cursor-pointer align-middle sm:justify-evenly xs: justify-around">
+              <img src={gitHubImg} class="xs: w-6 sm:w-6  lg:w-8" />
+              <p class="lg:text-2xl sm:text-md lg:ml-6 sm: -ml-4  " >GitHub</p>
+            </a>
+              
+           
+
           </div>
         </div>
       </div>

@@ -1,51 +1,54 @@
 ---
-title: "Card Header"
-metaTitle: "CardHeader Component"
-metaDescription: "This is the card header component of thousand lights"
+title: "Pinterest Cards"
+metaTitle: "Pinterest Cards"
+metaDescription: "List of Pinterest style cards."
 ---
 
-import cardHeaderImg from "../../../src/components/images/card-header.jpg";
+import PintestCardImg from "../../../src/components/images/Pinterest.gif";
 import Images from "../../../src/components/mdxComponents/image.js";
 
-The CardHeader serves as the header for the Card component. It can be used to show a title, subtitle, an image, a left and/or a right icon.
+List Pinterest style cards with ease in your Mobile app.
 
-<Images src={cardHeaderImg} />
+<Images src={PintestCardImg} />
 
 ## Usage
 
 ```javascript
-import {
-  Card,
-  CardHeader
-} from "thousand-lights";
+import PinterestCards from "thousand-lights";
+import {View} from "react-native";
 
-const CardComponent = () => {
+
+const PinterestCards = () => {
+
+    const listData = [
+        {
+          title: 'Beautiful and dramatic Antelope',
+          description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+          image: 'https://i.imgur.com/UYiroysl.jpg',
+        },
+        {
+          title: 'Earlier this morning, NYC',
+          description: 'Lorem ipsum dolor sit amet',
+          image: 'https://i.imgur.com/UPrs1EWl.jpg',
+        },
+        {
+          title: 'White Pocket Sunset',
+          description: 'Lorem ipsum dolor sit amet et nuncat ',
+          image: 'https://i.imgur.com/MABUbpDl.jpg',
+        },
+        {
+          title: 'Acrocorinth, Greece',
+          description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+          image: 'https://i.imgur.com/KZsmUi2l.jpg',
+        },
+      ];
+
   return (
-    <Card>
-      <CardHeader
-        title="Simple Card"
-        description="By Thousand Lights"
-        titleStyle={{ color: "red" }}
-        descriptionStyle={{ color: "blue" }}
-        image={{ uri: "https://i.imgur.com/lceHsT6l.jpg" }}
-        rightIcon={
-          <Icon
-            name="dots-vertical"
-            size={25}
-            style={{ marginRight: 15 }}
-            onPress={() => {}}
-          />
-        }
-        leftIcon={
-          <Icon
-            name="face"
-            size={25}
-            style={{ marginRight: 15 }}
-            onPress={() => {}}
-          />
-        }
-      />
-    </Card>;
+
+      <View>
+      <PinterestCards data={listData} />
+      </View>
+   
   )
 }
 

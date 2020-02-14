@@ -56,9 +56,9 @@ function Header() {
           <Link to={"/gettingStarted"}>Documentation </Link>
         </p>
 
-        <p href="#" className="nav-menu slide-center-out">
+        {/* <p href="#" className="nav-menu slide-center-out">
           <Link to={"/blog/"}>Blog </Link>
-        </p>
+        </p> */}
 
         {/* <p href="#" className="nav-menu slide-center-out"><Link to={"/careers/"}>Careers </Link></p> */}
         {/* <p href="#" className="nav-menu slide-center-out"><Link to={"/expertise/"}>Expertise</Link></p> */}
@@ -97,11 +97,11 @@ function Header() {
               Documentation{" "}
             </Link>
           </p>
-          <p href="#" className="nav-menu">
+          {/* <p href="#" className="nav-menu">
             <Link to={"/blog/"} onClick={closeNav}>
               Blog{" "}
             </Link>
-          </p>
+          </p> */}
 
           <p href="#" className="nav-menu">
             <a target="blank" href={config.header.githubUrl} onClick={closeNav}>

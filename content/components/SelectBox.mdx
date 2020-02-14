@@ -1,33 +1,36 @@
 ---
-title: "Card Content"
-metaTitle: "Card Content Component"
-metaDescription: "This is the card content component of thousand lights"
+title: "Select Box [BottomSheet]"
+metaTitle: "BottomSheet based SelectBox"
+metaDescription: "BottomSheet based SelectBox"
 ---
 
-Used to show content inside the card
+BottomSheet based SelectBox for your Ultra-Modern Mobile UI.
 
 ## Usage
 
 ```javascript
-import {
-  Card,
-  CardContent,
-} from "thousand-lights";
+import SelectBox from "thousand-lights";
 
-const CardComponent = () => {
+const SelectBox = () => {
+
+   const data = 
+      {
+        placeholder: 'Select',
+        label: 'Lorem ipsum ',  
+      }
+
+    const options =[
+      'option1',
+      'option2',
+      'option3'
+    ]
+
   return (
-    <Card>
-      <CardContent>
-        <Text>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it to
-          make a type specimen book.
-        </Text>
-      </CardContent>
-    </Card>;
-  )
-}
+    <View>
+    <SelectBox data={data} options={options} />
+    </View>
+  );
+};
 
 ```
 

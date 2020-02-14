@@ -12,17 +12,17 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div class="pt-8">
+      <div>
         <section class="p-4 justify-center lg:my-10 lg:mb-10 sm: mb-10">
           <HeaderBlock />
         </section>
-        <section class="lg:px-20">
+        <section class="lg:px-20 relative">
           <About />
         </section>
-        <section>
+        <section class="relative">
           <InstallationSteps />
         </section>{" "}
-        <section>
+        <section class="lg:pb-10">
           <Banner2 />
         </section>
       </div>
