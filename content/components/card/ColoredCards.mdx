@@ -22,20 +22,29 @@ import ColoredCards from " "react-native-1000Lights"";
 const ColoredCards = () => {
      const cardItems = [
         {
-          title: 'Card 1 ',
-          description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+          title: 'Colored cards ',
+          description: 'You can add a list of colored cards',
           buttonTitle: 'Get Started',
-          backgroundColor: 'black',
+          backgroundColor: 'green',
           buttonFunction: function(){
               console.log("Thousand Lights")
           }
         },
         {
-            title: 'Card 2',
-            description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+            title: 'Pintest cards',
+            description: 'Pinterest style can that can be used with ease',
             buttonTitle: 'Get Started',
-            backgroundColor: 'black',
-            buttonFunction: ()=>{AlertFunction()}
+            backgroundColor: 'Pink',
+            buttonFunction: function(){
+              Alert.alert("Thank You", "for choosing Thousand Lights!", [{text:"Welcome"}])
+          },
+           {
+            title: 'You can also check out',
+            description: 'Bottomsheet, Input',
+            buttonTitle: 'Get Started',
+            backgroundColor: 'blue',
+            buttonFunction: function(){
+              Alert.alert("Thank You", "for choosing Thousand Lights!", [{text:"Welcome"}])
           },
       ];
   return (
