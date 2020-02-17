@@ -1,0 +1,758 @@
+{
+    "pinterestCards": [
+        {
+            "name":"image",
+            "type": "URL",
+            "default": "-",
+            "description": "Renders the image inside the card"
+         },
+
+         {
+            "name":"imageHeight",
+            "type": "int",
+            "default": "200",
+            "description": "Image inside the card"
+         },
+
+         {
+            "name":"cardBackgroundColor",
+            "type": "string",
+            "default": "#121111",
+            "description": "Backbround color for the card"
+         },
+
+         {
+            "name":"borderRadius",
+            "type": "int",
+            "default": "5",
+            "description": "Border Radius for the image inside the card"
+         },
+         {
+            "name":"primaryTextSize",
+            "type": "int",
+            "default": "14",
+            "description": "Title text Size"
+         },
+         {
+            "name":"primaryTextAlign",
+            "type": "int",
+            "default": "14",
+            "description": " left "
+         },
+         {
+            "name":"primaryTextColor",
+            "type": "string",
+            "default": "black",
+            "description": " Title text Color "
+         }, {
+            "name":"primaryFontFamily",
+            "type": "string",
+            "default": "Arial",
+            "description": " Title font family "
+         },
+         {
+            "name":"primaryFontWeight",
+            "type": "string",
+            "default": "bold",
+            "description": "Font weight of the title text"
+         },
+         {
+            "name":"secondaryTextSize",
+            "type": "int",
+            "default": "14",
+            "description": "Title text Size"
+         },
+         {
+            "name":"cardBodyHeight",
+            "type": "int",
+            "default": "150",
+            "description": "Height of the body section of the card"
+         },
+         {
+            "name":"secondaryTextColor",
+            "type": "string",
+            "default": "black",
+            "description": " Title text Color "
+         }, {
+            "name":"secondaryFontFamily",
+            "type": "string",
+            "default": "Arial",
+            "description": " Title font family "
+         },
+         {
+            "name":"secondaryFontWeight",
+            "type": "string",
+            "default": "normal",
+            "description": " Title font weight "
+         },
+         {
+            "name":"buttonFunction",
+            "type": "function",
+            "default": "-",
+            "description": "Function for the respective card button"
+         }
+
+    ],
+
+
+    "coloredCards": [
+
+        {
+            "name":"title",
+            "type": "string",
+            "default": "-",
+            "description": "Card title"
+         },
+
+         {
+            "name":"description",
+            "type": "string",
+            "default": "",
+            "description": "Card description"
+         },
+
+         {
+            "name":"buttonTitle",
+            "type": "string",
+            "default": "Get Started",
+            "description": "Button title"
+         },
+
+         {
+            "name":"buttonFunction",
+            "type": "function",
+            "default": "-",
+            "description": "Function for the respective card button"
+         },
+    
+         {
+            "name":"backgroundColor",
+            "type": "string",
+            "default": "#399ce3",
+            "description": "Backbround color for the card"
+         },
+
+         {
+            "name":"cardHeight",
+            "type": "int",
+            "default": "320",
+            "description": "Overall Height of the card"
+         },
+
+
+         {
+            "name":"cardWidth",
+            "type": "int",
+            "default": "null",
+            "description": "respective card width"
+         },
+
+         {
+            "name":"cardMargin",
+            "type": "int",
+            "default": "10",
+            "description": "Margin of the respective card"
+         },
+
+         {
+            "name":"cardBorderRadius",
+            "type": "int",
+            "default": "20",
+            "description": "Border radius of the respective card"
+         },
+
+
+         
+         {
+            "name":"cardPadding",
+            "type": "int",
+            "default": "16",
+            "description": "padding of the respective card"
+         },
+
+         {
+            "name":"primaryTextSize",
+            "type": "int",
+            "default": "28",
+            "description": "Title text Size"
+         },
+         {
+            "name":"primaryTextColor",
+            "type": "string",
+            "default": "white",
+            "description": " Title text Color "
+         }, 
+         {
+            "name":"primaryTextWeight",
+            "type": "string",
+            "default": "bold",
+            "description": " Title font weight "
+         }, 
+
+         {
+            "name":"primaryTextTop",
+            "type": "int",
+            "default": "15",
+            "description": " Set Top Value for the Title text "
+         }, 
+
+         {
+            "name":"cardHeaderJustifyContent",
+            "type": "string",
+            "default": "flex-start",
+            "description": " Title content justification along the height "
+         }, 
+
+         {
+            "name":"cardHeaderAlignItem",
+            "type": "string",
+            "default": "flex-start",
+            "description": " Title content align along the width "
+         }, 
+
+         {
+            "name":"cardBodyJustifyContent",
+            "type": "string",
+            "default": "flex-start",
+            "description": " Description content justification along the height "
+         }, 
+
+         {
+            "name":"cardBodyAlignItem",
+            "type": "string",
+            "default": "flex-start",
+            "description": " Description content align along the width "
+         }, 
+
+         {
+            "name":"cardButtomJustifyContent",
+            "type": "string",
+            "default": "flex-start",
+            "description": " Button alignment along the height "
+         }, 
+
+          {
+            "name":"cardButtonAlignItem",
+            "type": "string",
+            "default": "flex-start",
+            "description": " Button alignment along the width"
+         }, 
+         
+         {
+            "name":"secondaryTextSize",
+            "type": "int",
+            "default": "14",
+            "description": "Title text Size"
+         },
+         {
+            "name":"secondaryTextAlign",
+            "type": "string",
+            "default": "left",
+            "description": " Text alignment of the description"
+         },
+         {
+            "name":"secondaryTextColor",
+            "type": "string",
+            "default": "White",
+            "description": " Description text Color "
+         }, 
+         {
+            "name":"secondaryTextSize",
+            "type": "int",
+            "default": "16",
+            "description": " Description font size"
+         },
+         {
+            "name":"buttonWidth",
+            "type": "int",
+            "default": "150",
+            "description": " Button Width "
+         },
+
+         {
+            "name":"buttonHeight",
+            "type": "int",
+            "default": "50",
+            "description": " Button height "
+         },
+
+         {
+            "name":"buttonTop",
+            "type": "int",
+            "default": "50",
+            "description": " Top value for the respective button "
+         },
+
+         {
+            "name":"buttonBackground",
+            "type": "string",
+            "default": "#05ada5",
+            "description": " Button Background "
+         },
+         
+         {
+            "name":"buttonBorderRadius",
+            "type": "int",
+            "default": "12",
+            "description": " Button Radius "
+         },
+
+         {
+            "name":"buttonPadding",
+            "type": "int",
+            "default": "8",
+            "description": " Padding for Button "
+         },
+
+         {
+            "name":"buttonTextColor",
+            "type": "sting",
+            "default": "white",
+            "description": " button Text Color"
+         },
+
+         {
+            "name":"buttonTextAlign",
+            "type": "sting",
+            "default": "center",
+            "description": "Align text within button"
+         },
+
+         {
+            "name":"buttonTextTop",
+            "type": "int",
+            "default": "8",
+            "description": "Set Top value for the text within the button"
+         },
+
+         {
+            "name":"buttonTextBottom",
+            "type": "int",
+            "default": "8",
+            "description": "Set Bottom value for the text within the button"
+         },
+
+         {
+            "name":"buttonTextSize",
+            "type": "int",
+            "default": "8",
+            "description": "Font size of the text in the Button"
+         }
+    ],
+
+    "cardSlider":[
+
+        {
+            "name":"backgroundImage",
+            "type": "image URL",
+            "default": "-",
+            "description": "Font size of the text in the Button"
+         },
+
+         {
+            "name":"cardBorderRadius",
+            "type": "int",
+            "default": "15",
+            "description": "Border radius of the respective card"
+         },
+
+         {
+            "name":"cardHeight",
+            "type": "int",
+            "default": "200",
+            "description": "Height of the card"
+         },
+
+         { "name":"cardWidth",
+            "type": "int",
+            "default": "155",
+            "description": "respective card width"
+         },
+        
+         {
+            "name":"buttonFunction",
+            "type": "function",
+            "default": "-",
+            "description": "Function for the respective card button"
+         },
+
+         {
+            "name":"cardPadding",
+            "type": "int",
+            "default": "10",
+            "description": "padding of the respective card"
+         },
+
+    
+         {
+            "name":"cardHeaderJustifyContent",
+            "type": "string",
+            "default": "flex-start",
+            "description": " Title content justification along the height "
+         }, 
+
+         {
+            "name":"cardHeaderAlignItem",
+            "type": "string",
+            "default": "flex-start",
+            "description": " Title content align along the width "
+         }, 
+
+         {
+            "name":"primaryTextColor",
+            "type": "string",
+            "default": "black",
+            "description": " Title text Color "
+         },
+
+         {
+            "name":"primaryTextSize",
+            "type": "int",
+            "default": "20",
+            "description": "Title text Size"
+         },
+
+         {
+            "name":"title",
+            "type": "string",
+            "default": "-",
+            "description": "Card title"
+         },
+
+         { "name":"cardBodyHeight",
+            "type": "int",
+            "default": "100",
+            "description": "Height of the description container(Card Body)"
+         },
+         
+         { "name":" cardBackground",
+            "type": "string",
+            "default": "#2675FC",
+            "description": "Background color of the card"
+         },
+
+         { "name":" cardMargin(background image cards)",
+            "type": "int",
+            "default": "10",
+            "description": "Set the card margin if you include image as a background image"
+         },
+         
+         { "name":"cardBodyAlignItem",
+            "type": "int",
+            "default": "flex-start",
+            "description": "Align the content in the description container along the width"
+         },
+
+         { "name":"cardBodyJustifyContent",
+            "type": "int",
+            "default": "flex-start",
+            "description": "justify the content in the description container along the height"
+         },
+         {
+            "name":"secondaryTextColor",
+            "type": "string",
+            "default": "#777",
+            "description": " Title text Color "
+         },
+         {
+            "name":"secondaryTextMargin",
+            "type": "int",
+            "default": "5",
+            "description": "Margin for the description content "
+         },
+         {
+            "name":"description",
+            "type": "string",
+            "default": "",
+            "description": "Card description"
+         },
+         {
+            "name":"buttonWidth",
+            "type": "string in percentage",
+            "default": "70%",
+            "description": " Button Width "
+         },
+
+         {
+            "name":"buttonHeight",
+            "type": "int",
+            "default": "40",
+            "description": " Button height "
+         },
+
+         {
+            "name":"buttonTop",
+            "type": "int",
+            "default": "14",
+            "description": " Top value for the respective button "
+         },
+
+         {
+            "name":"buttonBackground",
+            "type": "string",
+            "default": "#05ada5",
+            "description": " Button Background "
+         },
+         
+         {
+            "name":"buttonBorderRadius",
+            "type": "int",
+            "default": "10",
+            "description": " Button Radius "
+         },
+
+         {
+            "name":"buttonPadding",
+            "type": "int",
+            "default": "4",
+            "description": " Padding for Button "
+         },
+
+         {
+            "name":"buttonTextColor",
+            "type": "sting",
+            "default": "white",
+            "description": " button Text Color"
+         },
+
+         {
+            "name":"buttonTextAlign",
+            "type": "sting",
+            "default": "center",
+            "description": "Align text within button"
+         },
+
+         {
+            "name":"buttonTextTop",
+            "type": "int",
+            "default": "7",
+            "description": "Set Top value for the text within the button"
+         },
+
+         {
+            "name":"buttonTextSize",
+            "type": "int",
+            "default": "12",
+            "description": "Font size of the text in the Button"
+         }
+    ],
+
+    "bottomSheet":[
+       {
+            "name":"buttonText",
+            "type": "string",
+            "default": "-",
+            "description": "Text inside the botton"
+        },
+        {
+            "name":"bodyText",
+            "type": "string",
+            "default": "-",
+            "description": " Description content inside the bottomsheet"
+        },
+        {
+            "name":"buttonStyles.width",
+            "type": "int",
+            "default": "200",
+            "description": " buttonStyles - width of the button"
+        },
+        {
+            "name":"buttonStyles.height",
+            "type": "int",
+            "default": "50",
+            "description": " buttonStyles - height of the button"
+        },
+        {
+            "name":"buttonStyles.borderRadius",
+            "type": "int",
+            "default": "0",
+            "description": " buttonStyles - Border Radius of the button"
+        },
+        {
+            "name":"buttonStyles.alignItems",
+            "type": "string",
+            "default": "center",
+            "description": " buttonStyles - button alignment with regards to width"
+        },
+        {
+            "name":"buttonStyles.justifyContent",
+            "type": "string",
+            "default": "center",
+            "description": " buttonStyles - button justifyContent with regards to height"
+        },
+
+        {
+            "name":"buttonStyles.fontSize",
+            "type": "int",
+            "default": "15",
+            "description": " buttonStyles - button justifyContent with regards to height"
+        },
+        {
+            "name":"buttonStyles.buttonTextColor",
+            "type": "int",
+            "default": "15",
+            "description": " buttonStyles - color of the button text"
+        },
+        {
+            "name":"buttonStyles.backgroundColor",
+            "type": "int",
+            "default": "15",
+            "description": " buttonStyles - backgroundColor of the button"
+        },
+        {
+            "name":"bottomSheetStyles.backgroundColor",
+            "type": "int",
+            "default": "15",
+            "description": " bottomSheetStyles -Background animation ('none', 'fade', 'slide')"
+        },
+        {
+            "name":"bottomSheetStyles.animationDuration",
+            "type": "int",
+            "default": "300",
+            "description": " bottomSheetStyles - animationDuration of the Background animation"
+        },
+        {
+            "name":"bottomSheetStyles.height",
+            "type": "int",
+            "default": "15",
+            "description": " bottomSheetStyles -height of the bottom sheet"
+        },
+        {
+            "name":"bottomSheetStyles.borderTopLeftRadius",
+            "type": "int",
+            "default": "30",
+            "description": " bottomSheetStyles - Top Left border radius of the bottom sheet"
+        },
+        {
+            "name":"bottomSheetStyles.borderTopRightRadius",
+            "type": "int",
+            "default": "30",
+            "description": " bottomSheetStyles - Top right border radius of the bottom sheet"
+        },
+        {
+            "name":"bottomSheetStyles.backgroundColor",
+            "type": "string",
+            "default": "white",
+            "description": " bottomSheetStyles - Background color of the bottom sheet"
+        },
+        {
+            "name":"bottomSheetStyles.textFontSize",
+            "type": "string",
+            "default": "-",
+            "description": " bottomSheetStyles - Font size of the bottom sheet content(bodyText)"
+        }
+    ],
+
+    "selectBox":[
+
+        {
+            "name":"label",
+            "type": "string",
+            "default": "-",
+            "description": " Label for the input text box"
+        },
+        {
+            "name":"TextBoxStyle",
+            "type": "style object",
+            "default": "-",
+            "description": "Custom style for input Text Box"
+        },
+        {
+            "name":"options",
+            "type": "Array",
+            "default": "-",
+            "description": "Array of options passed in as array"
+        },
+        {
+            "name":"placeholder",
+            "type": "string",
+            "default": "Placeholder",
+            "description": "Placeholder text"
+        },
+        {
+            "name":"placeholderColor",
+            "type": "string",
+            "default": "c4c4c4",
+            "description": "Placeholder color"
+        }
+        
+
+    ],
+
+    "input":[{
+        "name":"label",
+        "type": "string",
+        "default": "-",
+        "description": "Label for the Text Input."
+    },
+    {
+        "name":"appearance",
+        "type": "string",
+        "default": "underlined",
+        "description": "Can be underlined, bordered or rounded."
+
+    },
+    {
+        "name":"message",
+        "type": "string",
+        "default": " - ",
+        "description": "Can be used to display text under the input."
+
+    },
+    {
+        "name":"leftInputIcon",
+        "type": "Image Component",
+        "default": "normal",
+        "description": "Can be used to display an icon to the left of input."
+
+    },
+
+    {
+        "name":"rightInputIcon",
+        "type": "Image Component",
+        "default": "normal",
+        "description": "Can be used to display an icon to the right of input."
+
+    },
+
+    {
+        "name":"messageIcon",
+        "type": "Image Component",
+        "default": "normal",
+        "description": "Can be used to display an icon next to the input message."
+
+    },
+    {
+        "name":"inputContainerStyle",
+        "type": "View Component style",
+        "default": "normal",
+        "description": "Styles for the message container."
+
+    },
+    {
+        "name":"style",
+        "type": "TextInput Component style",
+        "default": "normal",
+        "description": "Styles for the TextInput component."
+
+    },
+    {
+        "name":"disabled",
+        "type": "boolean",
+        "default": "false",
+        "description": "Can be used to show disabled input."
+
+    },
+
+    {
+        "name":"...TextInputProps",
+        "type": "TextInputProps",
+        "default": " - ",
+        "description": "Any props of TextInput component."
+
+    }
+
+]
+
+
+ }

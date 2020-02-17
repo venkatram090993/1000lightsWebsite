@@ -7,15 +7,19 @@ const Img = styled("img")`
 
 const Wrapper = styled("div")`
   display: flex;
-  width: 50%;
+  width: 40%;
   margin: 10;
 
   @media only screen and (max-width: 767px) {
-    width: 50%;
+    width: 40%;
   }
 
   @media only screen and (max-width: 50rem) {
-    width: 100%;
+    width: 40%;
+  }
+
+  @media only screen and (max-width: 425px){
+      width: 50%;
   }
 `
 

@@ -72,8 +72,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.17",
+    "prettier": "^1.19.1",
     "prism-react-renderer": "^1.0.2",
-    "tailwindcss": "^1.1.4",
-    "prettier": "^1.19.1"
+    "tailwindcss": "^1.1.4"
   }
 }

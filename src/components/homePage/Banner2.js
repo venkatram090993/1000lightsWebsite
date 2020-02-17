@@ -12,7 +12,7 @@ const Banner2 = () => {
           {" "}
           1000 Lights Library
         </h1>
-        <button class="lg:text-xl lg:w-1/6 lg:py-2 rounded-lg text-white m-auto bg-green-600 sm: w-3/6 sm: p-2 " onClick={()=>{navigate('/gettingStarted')}}>
+        <button class="lg:text-xl mt-10 lg:w-64 lg:py-2 rounded-lg text-white m-auto bg-green-600 sm: w-3/6 sm: p-2 " onClick={()=>{navigate('/gettingStarted')}}>
           Get Started
         </button>
       </div>

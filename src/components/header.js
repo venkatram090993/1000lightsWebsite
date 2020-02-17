@@ -76,7 +76,7 @@ const Header = ({ location }) => (
       } = data
       const finalLogoLink = logo.link !== "" ? logo.link : "/"
       return (
-        <div className={"navBarWrapper"}>
+        <div className={"navBarWrapper lg:relative sm: sticky z-10 sm: w-full sm: inset-0"}>
           <nav className={"navBarDefault"}>
             <div className={"navBarHeader"}>
               <Link to={finalLogoLink} className={"navBarBrand"}>
@@ -86,10 +86,13 @@ const Header = ({ location }) => (
                   alt={"logo"}
                 />
               </Link>
+              <Link to="/" >
               <div
                 className={"headerTitle displayInline"}
                 dangerouslySetInnerHTML={{ __html: headerTitle }}
               />
+              </Link>
+              
               <span onClick={myFunction} className={"navBarToggle"}>
                 <span className={"iconBar"}></span>
                 <span className={"iconBar"}></span>

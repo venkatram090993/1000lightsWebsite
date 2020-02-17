@@ -1,39 +1,61 @@
 ---
 title: "Card Slider"
-metaTitle: "Card Footer Component"
-metaDescription: "This is the card footer component of thousand lights"
+metaTitle: "Card Slider"
+metaDescription: "This is the card"
 ---
 
-Serves as the footer for the Card component.
+import cardSlider from "../../../src/components/images/cardSliderGif.gif";
+import Images from "../../../src/components/mdxComponents/image.js";
+import Table from "../../../src/components/mdxComponents/propsTable.js"
+import cardData from "../../../src/components/mdxComponents/propsData.json"
+
+Highly configurable card slider.
+
+<Images src={cardSlider} />
+
 
 ## Usage
 
 ```javascript
 import {
   CardSlider
-} from "thousand-lights";
+} from "react-native-1000Lights";
 
 const CardComponent = () => {
-
-    const cardItems = [
+  const cardItems = [
         {
           title: 'Card 1 ',
-          description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+          description: 'Include images to your card',
           buttonTitle: 'Get Started',
-          backgroundColor: 'black',
+          backgroundImage: {uri:'https://i.imgur.com/2nCt3Sbl.jpg'},
           buttonFunction: function(){
-              console.log("Thousand Lights")
+            Alert.alert("Thank You", "for choosing Thousand Lights!", [{text:"Welcome"}])
+        }
+        },
+        {
+            title: 'Card 2',
+            description: 'You can choose to just have background color',
+            buttonTitle: 'Get Started',
+            backgroundColor: 'black',
+        },
+        {
+          title: 'Card 3 ',
+          description: 'onPress function is tagged to the image.',
+          buttonTitle: 'Get Started',
+          backgroundImage: {uri:'https://i.imgur.com/2nCt3Sbl.jpg'},
+          buttonFunction: function(){
+              Alert.alert("Thank You", "for choosing Thousand Lights!", [{text:"Welcome"}])
           }
         },
+
         {
             title: 'Card 2',
             description: 'Lorem ipsum dolor sit amet et nuncat mergitur',
             buttonTitle: 'Get Started',
-            backgroundColor: 'black',
-            buttonFunction: ()=>{AlertFunction()}
-          },
-      ];
+            backgroundImage:{uri:'https://i.imgur.com/KZsmUi2l.jpg'},
+        },
 
+      ];
 
   return (
     <CardSlider data={cardItems} />
@@ -42,33 +64,7 @@ const CardComponent = () => {
 
 ```
 
-## Props
-
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Default</th>
-      <th width="50%">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>children</td>
-      <td>ReactElement</td>
-      <td> - </td>
-      <td>Content inside the card </td>
-    </tr>
-    <tr>
-      <td>footerStyle</td>
-      <td>View Component styles</td>
-      <td> - </td>
-      <td>Style the footer component</td>
-    </tr>
-  </tbody>
-</table>
-<br />
+<Table data={cardData.cardSlider} />
 
 <!-- ## Live Editing example
 

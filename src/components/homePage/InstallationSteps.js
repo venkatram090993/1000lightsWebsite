@@ -4,10 +4,10 @@ import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs"
 
 const InstallationSteps = () => {
   const codeString = `import React from 'react';
-import { Button } from 'react-native-ui-kitten';
-export const AwesomeButton = () => (<Button>BUTTON</Button>);`
+import SelectBox from 'react-native-1000lights/ColoredCards';
+export const AwesomeButton = () => (<SelectBox options={options} data={data} />);`
 
-  const codeString2 = `npm i react-native-ui-kitten @eva-design/eva`
+  const codeString2 = `npm i react-native-1000lights`
 
   return (
     <div class="flex lg:flex-row justify-center my-10 lg:w-5/6 m-auto sm: w-4/5 sm: flex-col">

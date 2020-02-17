@@ -128,6 +128,7 @@ export default class MDXRuntimeTest extends Component {
         <div className={"titleWrapper"}>
           <h1 className={"title"}>{mdx.fields.title}</h1>
           <Edit className={"mobileView"}>
+              <br />
             <Link
               className={"gitBtn"}
               to={`${docsLocation}/${mdx.parent.relativePath}`}
