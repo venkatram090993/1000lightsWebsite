@@ -21,7 +21,7 @@ const IndexPage = () => {
         </section>
         <section class="relative">
           <InstallationSteps />
-        </section>{" "}
+        </section>
         <section class="lg:pb-10">
           <Banner2 />
         </section>

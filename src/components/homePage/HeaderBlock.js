@@ -30,7 +30,7 @@ const HeaderBlock = () => {
           <div class="flex lg:flex-row lg:justify-start lg:mt-10 lg:ml-10  sm: flex-col sm: m-auto sm: mt-5">
 
 
-          <div class=" bg-green-500 text-white rounded-md border-green-500 bg-transparent border-2 p-2 lg:m-2 sm: m-auto lg:w-2/6  sm:w-3/12 xs: w-3/6 sm: my-1 flex flex-row justify-center cursor-pointer align-middle"  onClick={()=>{navigate("/gettingStarted")}}>
+          <div class=" bg-green-500 text-white rounded-md border-green-500 bg-transparent border-2 p-2 lg:m-2 sm: m-auto lg:w-3/6  sm:w-3/12 xs: w-3/6 sm: my-1 flex flex-row justify-center cursor-pointer align-middle"  onClick={()=>{navigate("/gettingStarted")}}>
               {/* <img src={gitHubImg} style={{height:"35px", width:40, marginLeft:"-10px"}} /> */}
               <p class="lg:text-2xl sm:text-md" >Get Started</p>
             </div> 

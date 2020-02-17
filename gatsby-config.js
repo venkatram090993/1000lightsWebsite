@@ -93,7 +93,8 @@ if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
   plugins.push("gatsby-plugin-remove-serviceworker")
 }
 module.exports = {
-  pathPrefix: config.gatsby.pathPrefix,
+// pathPrefix: config.gatsby.pathPrefix,
+pathPrefix: "/reponame",
   siteMetadata: {
     title: config.siteMetadata.title,
     description: config.siteMetadata.description,
