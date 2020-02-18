@@ -7,6 +7,11 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+.bannerHeading{
+    color: "#FDD160";
+     font-size : 150px;
+}
+
 
 @media screen and (max-width: 600px) {
   .back {
@@ -15,4 +20,11 @@
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
   }
+
+  .bannerHeading{
+    color: "#FDD160";
+     font-size : 50px;
+     text-align: center;
+}
+
 }

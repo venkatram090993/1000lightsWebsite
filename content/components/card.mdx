@@ -10,60 +10,47 @@ import pinterestCardImg from "../../src/components/images/pinterest-card.jpg";
 
 The Card component serves as a basic container to display information such as text, images etc.
 
-<Images src={cardImg} />
 <Images src={pinterestCardImg} />
 
 ## Usage
 
 ```javascript
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter,
-  Button
-} from "thousand-lights";
+import ColoredCards from "react-native-lights";
 
-const CardComponent = () => {
+const ColoredCards = () => {
+     const cardItems = [
+        {
+          title: 'Colored cards ',
+          description: 'You can add a list of colored cards',
+          buttonTitle: 'Get Started',
+          backgroundColor: 'green',
+          buttonFunction: function(){
+              console.log("Thousand Lights")
+          }
+        },
+        {
+            title: 'Pintest cards',
+            description: 'Pinterest style can that can be used with ease',
+            buttonTitle: 'Get Started',
+            backgroundColor: 'Pink',
+            buttonFunction: function(){
+              Alert.alert("Thank You", "for choosing Thousand Lights!", [{text:"Welcome"}])
+          },
+           {
+            title: 'You can also check out',
+            description: 'Bottomsheet, Input',
+            buttonTitle: 'Get Started',
+            backgroundColor: 'blue',
+            buttonFunction: function(){
+              Alert.alert("Thank You", "for choosing Thousand Lights!", [{text:"Welcome"}])
+          },
+      ];
   return (
-    <Card>
-      <CardHeader
-        title="Simple Card"
-        description="By Thousand Lights"
-        titleStyle={{ color: "red" }}
-        descriptionStyle={{ color: "blue" }}
-        image={{ uri: "https://i.imgur.com/lceHsT6l.jpg" }}
-        rightIcon={
-          <Icon
-            name="dots-vertical"
-            size={25}
-            style={{ marginRight: 15 }}
-            onPress={() => {}}
-          />
-        }
-        leftIcon={
-          <Icon
-            name="face"
-            size={25}
-            style={{ marginRight: 15 }}
-            onPress={() => {}}
-          />
-        }
-      />
-      <CardContent>
-        <Text>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it to
-          make a type specimen book.
-        </Text>
-      </CardContent>
-      <CardFooter>
-        <Button>Get Started</Button>
-      </CardFooter>
-    </Card>;
-  )
-}
+    <View style={{flex:1}}
+    <ColoredCards data={cardItems} />
+    </View>
+  );
+};
 
 ```
 
