@@ -41,7 +41,7 @@ const HeaderBlock = () => {
               <p class="lg:text-xl sm:text-md" >Get Started</p>
             </div> 
             
-            <a  href="https://github.com/pipesort/native-components" class=" text-white rounded-md border-white bg-transparent border-2 lg:p-1 xl:p-2 lg:m-2 sm: m-auto lg:w-2/6  sm:w-3/12  xs: py-1 xs: w-2/6 sm: my-1 flex flex-row lg:justify-center sm:py-2 cursor-pointer align-middle sm:justify-evenly xs: justify-center" target="_blank">
+            <a  href="https://github.com/pipesort/react-native-lights" class=" text-white rounded-md border-white bg-transparent border-2 lg:p-1 xl:p-2 lg:m-2 sm: m-auto lg:w-2/6  sm:w-3/12  xs: py-1 xs: w-2/6 sm: my-1 flex flex-row lg:justify-center sm:py-2 cursor-pointer align-middle sm:justify-evenly xs: justify-center" target="_blank">
               <img src={gitHubImg} class="xs: w-6 xs: -ml-2 sm:w-6 sm:-mr-5 ml-2  lg:w-6 lg:-mr-5" />
               <p class="lg:text-xl sm:text-md lg:ml-6 sm:-ml-4 xs: px-2   " >GitHub</p>
             </a>

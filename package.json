@@ -1,7 +1,7 @@
 {
-  "name": "thousand-lights-docs",
+  "name": "Lights-docs",
   "private": true,
-  "description": "Documentation of thousand lights",
+  "description": "Documentation of Lights Library",
   "author": "Ayappa Reddy <ayappa@pipesort.com>",
   "version": "0.0.1",
   "dependencies": {

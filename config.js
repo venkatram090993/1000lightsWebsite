@@ -7,8 +7,8 @@ const config = {
   header: {
     logo: "",
     logoLink: "/",
-    title: "Thousand Lights",
-    githubUrl: "https://github.com/pipesort/native-components",
+    title: "Lights",
+    githubUrl: "https://github.com/pipesort/react-native-lights",
     helpUrl: "",
     tweetText: "",
     links: [{ text: "", link: "" }],
@@ -28,18 +28,18 @@ const config = {
     ignoreIndex: true,
   },
   siteMetadata: {
-    title: "Thousand Lights | Pipesort",
-    description: "Documentation for Thousand Lights",
+    title: "Lights | Pipesort",
+    description: "Documentation for Lights",
     ogImage: null,
     docsLocation:
-      "https://github.com/pipesort/thousand-lights-website/tree/master",
+      "https://github.com/pipesort/react-native-lights/tree/master",
     favicon: "",
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: "Thousand Lights",
-      short_name: "ThousandLights",
+      name: "Lights",
+      short_name: "Lights",
       start_url: "/",
       background_color: "#6b37bf",
       theme_color: "#6b37bf",

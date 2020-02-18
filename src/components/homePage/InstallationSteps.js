@@ -1,4 +1,5 @@
 import React from "react"
+import {navigate} from 'gatsby'
 import SyntaxHighlighter from "react-syntax-highlighter"
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs"
 
@@ -20,7 +21,7 @@ export const AwesomeButton = () => (<SelectBox options={options} data={data} />)
         <h1 class="lg:text-5xl text-center text-white font-bold lg:my-10 sm: text-4xl sm: m-5">
           How to use <br /> <span class="text-yellow-400">Lights</span>
         </h1>
-        <button class="lg:text-xl lg:w-48 lg:py-2 rounded-lg text-white m-auto bg-green-600 sm: w-3/6 sm: p-2">
+        <button class="lg:text-xl lg:w-48 lg:py-2 rounded-lg text-white m-auto bg-green-600 sm: w-3/6 sm: p-2" onClick={()=>{navigate('/gettingStarted')}}>
           Get Started
         </button>
       </div>
