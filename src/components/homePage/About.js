@@ -23,8 +23,8 @@ const About = () => {
         </p>
       </div>
 
-      <div class="flex lg:flex-row lg:w-5/6 m-auto my-10 sm: flex-col sm: m-auto">
-      <div class="box col-md-4 lg:m-5 lg:w-full md:full flex flex-col lg:p-2 m-auto sm: my-2 sm:w-5/6 xs: w-5/6 ">
+      <div class="flex lg:flex-row lg:w-full m-auto my-10 sm: flex-col sm: m-auto">
+      <div class="box col-md-4 lg:m-5 lg:w-full md:w-full flex flex-col lg:p-2 m-auto sm: my-2 sm:w-5/6 xs: w-5/6 ">
           <div>
             <img
               src={componentImg}

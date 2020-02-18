@@ -94,7 +94,7 @@ if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
 }
 module.exports = {
 // pathPrefix: config.gatsby.pathPrefix,
-pathPrefix: "/reponame",
+pathPrefix: "/1000lights-website",
   siteMetadata: {
     title: config.siteMetadata.title,
     description: config.siteMetadata.description,
